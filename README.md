@@ -1,6 +1,6 @@
 # PHP CLI Testing
 ```diff
-THIS IS A TEST PROJECT NOT INTENDED FOR PRODUCTION USE.
+- THIS IS A TEST PROJECT NOT INTENDED FOR PRODUCTION USE.
 ```
 
 A big testing environment for CLI on most of the recent php versions.
