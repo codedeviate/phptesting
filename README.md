@@ -1,4 +1,4 @@
-# phptesting
+# PHP CLI Testing
 ```diff
 - THIS IS A TEST PROJECT NOT INTENDED FOR PRODUCTION USE.
 ```
