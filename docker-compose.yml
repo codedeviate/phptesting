@@ -1,7 +1,77 @@
 version: "1.0"
 services:
+  php56:
+    build: ./php56alpine
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10056:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
+
+  php70:
+    build: ./php70alpine
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10070:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
+
+  php71:
+    build: ./php71alpine
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10071:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
+
+  php72:
+    build: ./php72alpine
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10072:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
+
+  php73:
+    build: ./php73alpine
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10073:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
+
   php74:
-    build: ./php74
+    build: ./php74alpine
     restart: unless-stopped
     volumes:
       - ./code/:/app
@@ -15,7 +85,7 @@ services:
       - PHP_FPM_LISTEN_MODE=0666
 
   php80:
-    build: ./php80
+    build: ./php80alpine
     restart: unless-stopped
     volumes:
       - ./code/:/app
@@ -29,7 +99,7 @@ services:
       - PHP_FPM_LISTEN_MODE=0666
 
   php81:
-    build: ./php81
+    build: ./php81alpine
     restart: unless-stopped
     volumes:
       - ./code/:/app
@@ -43,7 +113,7 @@ services:
       - PHP_FPM_LISTEN_MODE=0666
 
   php82:
-    build: ./php82
+    build: ./php82alpine
     restart: unless-stopped
     volumes:
       - ./code/:/app
