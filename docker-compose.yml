@@ -1,0 +1,57 @@
+version: "1.0"
+services:
+  php74:
+    build: ./php74
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10074:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
+
+  php80:
+    build: ./php80
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10080:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
+
+  php81:
+    build: ./php81
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10081:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
+
+  php82:
+    build: ./php82
+    restart: unless-stopped
+    volumes:
+      - ./code/:/app
+    working_dir: /app
+    entrypoint: "php -S 0.0.0.0:80"
+    ports:
+      - 10082:80
+    environment:
+      - PHP_FPM_USER=www-data
+      - PHP_FPM_GROUP=www-data
+      - PHP_FPM_LISTEN_MODE=0666
