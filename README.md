@@ -5,6 +5,138 @@
 
 A big testing environment for CLI on most of the recent php versions.
 
+## package.json???
+Just to mess with some purists we've used npm.
+
+## Usage
+### Build
+npm style
+```bash
+# npm run build
+```
+Docker style
+```bash
+# docker-compose build
+```
+### Start
+npm style
+```bash
+# npm run start
+```
+Docker style
+```bash
+# docker-compose down && docker-compose up -d
+```
+### Stop
+npm style
+```bash
+# npm run stop
+```
+Docker style
+```bash
+# docker-compose down
+```
+### Restart
+npm style
+```bash
+# npm run restart
+```
+Docker style
+```bash
+# docker-compose restart
+```
+### Logs
+npm style
+```bash
+# npm run logs
+```
+Docker style
+```bash
+# docker-compose logs -f
+```
+### Enter terminal
+#### PHP 5.6
+npm style
+```bash
+# npm run enter:php56
+```
+Docker style
+```bash
+# docker exec -it phptesting-php56-1 ash
+```
+#### PHP 7.0
+npm style
+```bash
+# npm run enter:php70
+```
+Docker style
+```bash
+# docker exec -it phptesting-php70-1 ash
+```
+#### PHP 7.1
+npm style
+```bash
+# npm run enter:php71
+```
+Docker style
+```bash
+# docker exec -it phptesting-php71-1 ash
+```
+#### PHP 7.2
+npm style
+```bash
+# npm run enter:php72
+```
+Docker style
+```bash
+# docker exec -it phptesting-php72-1 ash
+```
+#### PHP 7.3
+npm style
+```bash
+# npm run enter:php73
+```
+Docker style
+```bash
+# docker exec -it phptesting-php73-1 ash
+```
+#### PHP 7.4
+npm style
+```bash
+# npm run enter:php74
+```
+Docker style
+```bash
+# docker exec -it phptesting-php74-1 ash
+```
+#### PHP 8.0
+npm style
+```bash
+# npm run enter:php80
+```
+Docker style
+```bash
+# docker exec -it phptesting-php80-1 ash
+```
+#### PHP 8.1
+npm style
+```bash
+# npm run enter:php81
+```
+Docker style
+```bash
+# docker exec -it phptesting-php81-1 ash
+```
+#### PHP 8.2
+npm style
+```bash
+# npm run enter:php82
+```
+Docker style
+```bash
+# docker exec -it phptesting-php82-1 ash
+```
+
 ## Supported PHP versions
 The support for PHP in the different version are at the moment basic but will be extended to a useful level.
 
@@ -27,6 +159,7 @@ The support for PHP in the different version are at the moment basic but will be
 * PHP 5.2
 * PHP 5.1
 * PHP 5.0
+
 Which version will be supported is more of a work in progress. The list is more to be considered a wish list.
 
 ## Exposed ports
