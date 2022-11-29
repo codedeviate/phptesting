@@ -15,6 +15,16 @@
         "enter:php74": "docker exec -it phptesting-php74-1 ash",
         "enter:php80": "docker exec -it phptesting-php80-1 ash",
         "enter:php81": "docker exec -it phptesting-php81-1 ash",
-        "enter:php82": "docker exec -it phptesting-php82-1 ash"
+        "enter:php82": "docker exec -it phptesting-php82-1 ash",
+
+        "browser:php56": "open http://localhost:10560/$URL",
+        "browser:php70": "open http://localhost:10700/$URL",
+        "browser:php71": "open http://localhost:10710/$URL",
+        "browser:php72": "open http://localhost:10720/$URL",
+        "browser:php73": "open http://localhost:10730/$URL",
+        "browser:php74": "open http://localhost:10740/$URL",
+        "browser:php80": "open http://localhost:10800/$URL",
+        "browser:php81": "open http://localhost:10810/$URL",
+        "browser:php82": "open http://localhost:10820/$URL"
     }
 }

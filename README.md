@@ -150,7 +150,7 @@ The support for PHP in the different version are at the moment basic but will be
 ### PHP 7.0 
 ### PHP 5.6
 
-## Planned support
+## Not yet supported
 
 ### PHP versions
 * PHP 5.5
@@ -160,21 +160,21 @@ The support for PHP in the different version are at the moment basic but will be
 * PHP 5.1
 * PHP 5.0
 
-Which version will be supported is more of a work in progress. The list is more to be considered a wish list.
+Which version will be supported is more of a work in progress. The list is to be considered a wish list.
 
 ## Exposed ports
-Each PHP service has a port exposed. The port used is 10000 plus the PHP version multipled by 10.
+Each PHP service has a port exposed. The port used is 10000 plus the PHP version multipled by 100. (The first attempt on this was to multiply by 10. But then PHP 8.0 would have the port 10080 and that port is considered unsafe by browsers.)
 
 | Version | Port  |
 | ------- | ----- |
-| 8.2     | 10082 |
-| 8.1     | 10081 |
-| 8.0     | 10080 |
-| 7.4     | 10074 |
-| 7.3     | 10073 |
-| 7.1     | 10071 |
-| 7.0     | 10070 |
-| 5.6     | 10056 |
+| 8.2     | 10820 |
+| 8.1     | 10810 |
+| 8.0     | 10800 |
+| 7.4     | 10740 |
+| 7.3     | 10730 |
+| 7.1     | 10710 |
+| 7.0     | 10700 |
+| 5.6     | 10560 |
 
 ## Used and alternative distributions
 All versions are based on official PHP docker images with an Alpine distribution.
