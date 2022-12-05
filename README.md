@@ -62,17 +62,46 @@ Docker style
 The support for PHP in the different version are at the moment basic but will be extended to a useful level.
 
 ### PHP 8.2
+Version:
+* PHP 8.2 RC7 [^1]
+
 ### PHP 8.1
+Version:
+* PHP 8.1.13 [^1]
+
 ### PHP 8.0
+Version:
+* PHP 8.0.26
+
 ### PHP 7.4
+Version:
+* PHP 7.4.33 [^1]
+
 ### PHP 7.3
+Version:
+* PHP 7.3.33 [^1]
+
 ### PHP 7.2
+Version:
+* PHP 7.2.34 [^1]
+
 ### PHP 7.1
+Version:
+* PHP 7.1.33 [^1]
+
 ### PHP 7.0 
+Version:
+* PHP 7.0.33 [^1]
+
 ### PHP 5.6
+Version:
+* PHP 5.6.40 [^1]
 
 ## Versions in progress
 ### PHP 5.5
+Version:
+* PHP 5.5.38 [^1]
+
 This version has not all modules added yet.
 
 It runs and answers on the exposed port but lacks some features.
@@ -205,3 +234,6 @@ All versions are based on official PHP docker images with an Alpine distribution
 PHP 8.2, PHP 8.1, PHP 8.0 and PHP 7.4 each have a Dockerfile that uses the standard distribution used by PHP (Debian based) that can be used by altering *docker-composer.yml*.
 
 PHP 5.5 and earlier doesn't have any official docker images based on Alpine. We might add these later.
+
+## Footnotes
+[^1]: The stated PHP version is the version available when the versions were checked. The real version might be more recent.
