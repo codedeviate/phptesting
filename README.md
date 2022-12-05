@@ -58,89 +58,6 @@ Docker style
 ```bash
 # docker-compose logs -f
 ```
-### Enter terminal
-#### PHP 5.6
-npm style
-```bash
-# npm run enter:php56
-```
-Docker style
-```bash
-# docker exec -it phptesting-php56-1 ash
-```
-#### PHP 7.0
-npm style
-```bash
-# npm run enter:php70
-```
-Docker style
-```bash
-# docker exec -it phptesting-php70-1 ash
-```
-#### PHP 7.1
-npm style
-```bash
-# npm run enter:php71
-```
-Docker style
-```bash
-# docker exec -it phptesting-php71-1 ash
-```
-#### PHP 7.2
-npm style
-```bash
-# npm run enter:php72
-```
-Docker style
-```bash
-# docker exec -it phptesting-php72-1 ash
-```
-#### PHP 7.3
-npm style
-```bash
-# npm run enter:php73
-```
-Docker style
-```bash
-# docker exec -it phptesting-php73-1 ash
-```
-#### PHP 7.4
-npm style
-```bash
-# npm run enter:php74
-```
-Docker style
-```bash
-# docker exec -it phptesting-php74-1 ash
-```
-#### PHP 8.0
-npm style
-```bash
-# npm run enter:php80
-```
-Docker style
-```bash
-# docker exec -it phptesting-php80-1 ash
-```
-#### PHP 8.1
-npm style
-```bash
-# npm run enter:php81
-```
-Docker style
-```bash
-# docker exec -it phptesting-php81-1 ash
-```
-#### PHP 8.2
-npm style
-```bash
-# npm run enter:php82
-```
-Docker style
-```bash
-# docker exec -it phptesting-php82-1 ash
-```
-
 ## Supported PHP versions
 The support for PHP in the different version are at the moment basic but will be extended to a useful level.
 
@@ -154,10 +71,15 @@ The support for PHP in the different version are at the moment basic but will be
 ### PHP 7.0 
 ### PHP 5.6
 
+## Versions in progress
+### PHP 5.5
+This version has not all modules added yet.
+
+It runs and answers on the exposed port but lacks some features.
+
 ## Not yet supported
 
 ### PHP versions
-* PHP 5.5
 * PHP 5.4
 * PHP 5.3
 * PHP 5.2
@@ -179,6 +101,103 @@ Each PHP service has a port exposed. The port used is 10000 plus the PHP version
 | 7.1     | 10710 |
 | 7.0     | 10700 |
 | 5.6     | 10560 |
+| 5.5     | 10550 |
+
+## Enter terminal
+
+### PHP 8.2
+npm style
+```bash
+# npm run enter:php82
+```
+Docker style
+```bash
+# docker exec -it phptesting-php82-1 ash
+```
+
+### PHP 8.1
+npm style
+```bash
+# npm run enter:php81
+```
+Docker style
+```bash
+# docker exec -it phptesting-php81-1 ash
+```
+### PHP 8.0
+npm style
+```bash
+# npm run enter:php80
+```
+Docker style
+```bash
+# docker exec -it phptesting-php80-1 ash
+```
+### PHP 7.4
+npm style
+```bash
+# npm run enter:php74
+```
+Docker style
+```bash
+# docker exec -it phptesting-php74-1 ash
+```
+### PHP 7.3
+npm style
+```bash
+# npm run enter:php73
+```
+Docker style
+```bash
+# docker exec -it phptesting-php73-1 ash
+```
+### PHP 7.2
+npm style
+```bash
+# npm run enter:php72
+```
+Docker style
+```bash
+# docker exec -it phptesting-php72-1 ash
+```
+
+### PHP 7.1
+npm style
+```bash
+# npm run enter:php71
+```
+Docker style
+```bash
+# docker exec -it phptesting-php71-1 ash
+```
+
+### PHP 7.0
+npm style
+```bash
+# npm run enter:php70
+```
+Docker style
+```bash
+# docker exec -it phptesting-php70-1 ash
+```
+### PHP 5.6
+npm style
+```bash
+# npm run enter:php56
+```
+Docker style
+```bash
+# docker exec -it phptesting-php56-1 ash
+```
+### PHP 5.5
+npm style
+```bash
+# npm run enter:php55
+```
+Docker style
+```bash
+# docker exec -it phptesting-php55-1 ash
+```
 
 ## Used and alternative distributions
 All versions are based on official PHP docker images with an Alpine distribution.

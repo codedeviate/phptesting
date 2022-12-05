@@ -1,12 +1,13 @@
 {
     "version": "1.0",
-    "description": "PHP testing environments from PHP 5.6 up to PHP 8.2 RC7",
+    "description": "PHP testing environments from PHP 5.5 up to PHP 8.2 RC7",
     "scripts": {
         "start": "docker-compose down && docker-compose up -d",
         "stop": "docker-compose down",
         "restart": "docker-compose restart",
         "logs": "docker-compose logs -f",
         "build": "docker-compose build",
+        "enter:php55": "docker exec -it phptesting-php55-1 ash",
         "enter:php56": "docker exec -it phptesting-php56-1 ash",
         "enter:php70": "docker exec -it phptesting-php70-1 ash",
         "enter:php71": "docker exec -it phptesting-php71-1 ash",
@@ -17,6 +18,7 @@
         "enter:php81": "docker exec -it phptesting-php81-1 ash",
         "enter:php82": "docker exec -it phptesting-php82-1 ash",
 
+        "browser:php55": "open http://localhost:10550/$URL",
         "browser:php56": "open http://localhost:10560/$URL",
         "browser:php70": "open http://localhost:10700/$URL",
         "browser:php71": "open http://localhost:10710/$URL",
