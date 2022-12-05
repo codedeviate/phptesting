@@ -3,7 +3,11 @@
 - THIS IS A TEST PROJECT NOT INTENDED FOR PRODUCTION USE.
 ```
 
-A big testing environment for CLI on most of the recent php versions.
+A testing environment for CLI on most of the recent php versions and some older onces as well.
+
+It also provides an external port so that browser testing can be done as well.
+
+The internal port is 80 for all sub environments. Respective external port can be found [here](#exposed-ports)
 
 ## package.json???
 Just to mess with some purists we've used npm.

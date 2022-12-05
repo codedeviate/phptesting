@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "description": "PHP testing environments from PHP 7.4 up to PHP 8.2",
+    "description": "PHP testing environments from PHP 5.6 up to PHP 8.2 RC7",
     "scripts": {
         "start": "docker-compose down && docker-compose up -d",
         "stop": "docker-compose down",
