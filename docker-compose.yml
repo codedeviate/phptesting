@@ -5,6 +5,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -19,6 +20,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -33,6 +35,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -47,6 +50,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -61,6 +65,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -75,6 +80,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -89,6 +95,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -103,6 +110,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -117,6 +125,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
@@ -131,6 +140,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./code/:/app
+      - ./src/info.php:/app/_dockerinfo.php
     working_dir: /app
     entrypoint: "php -S 0.0.0.0:80"
     ports:
