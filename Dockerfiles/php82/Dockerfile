@@ -1,4 +1,4 @@
-FROM php:8.2-rc-cli
+FROM php:8.2-cli
 
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install apt-utils -y \

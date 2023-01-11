@@ -1,12 +1,15 @@
 {
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "PHP testing environments from PHP 5.5 up to PHP 8.2 RC7",
     "scripts": {
         "start": "docker-compose down && docker-compose up -d",
+        "up": "docker-compose down && docker-compose up -d",
         "stop": "docker-compose down",
+        "down": "docker-compose down",
         "restart": "docker-compose restart",
         "logs": "docker-compose logs -f",
         "build": "docker-compose build",
+        "info": "./info.sh",
         "enter:php55": "docker exec -it phptesting-php55-1 ash",
         "enter:php56": "docker exec -it phptesting-php56-1 ash",
         "enter:php70": "docker exec -it phptesting-php70-1 ash",
