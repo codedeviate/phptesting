@@ -116,13 +116,14 @@ Version:
 
 ## Versions in progress
 ### PHP 5.5
-Version:
-* PHP 5.5.38 [^1]
-* Alpine 3.4.0 [^2]
+***This version has been removed due to stability issues as of February 13, 2023***
+~~Version:~~
+* ~~PHP 5.5.38 [^1]~~
+* ~~Alpine 3.4.0 [^2]~~
 
-This version has not all PHP modules added yet.
+~~This version has not all PHP modules added yet.~~
 
-It runs and answers on the exposed port but lacks some features.
+~~It runs and answers on the exposed port but lacks some features.~~
 
 ## Not yet supported
 
