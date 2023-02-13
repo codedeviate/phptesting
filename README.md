@@ -71,18 +71,18 @@ The support for PHP in the different version is at the moment basic but will be 
 
 ### PHP 8.2
 Version:
-* PHP 8.2.1 [^1]
-* Alpine 3.17.1 [^2]
+* PHP 8.2.2 [^1]
+* Alpine 3.17.2 [^2]
 
 ### PHP 8.1
 Version:
-* PHP 8.1.14 [^1]
-* Alpine 3.17.1 [^2]
+* PHP 8.1.15 [^1]
+* Alpine 3.17.2 [^2]
 
 ### PHP 8.0
 Version:
 * PHP 8.0.27 [^1]
-* Alpine 3.16.3 [^2]
+* Alpine 3.16.4 [^2]
 
 ### PHP 7.4
 Version:

@@ -1,19 +1,19 @@
 version: "1.0"
 services:
-  php55:
-    build: ./Dockerfiles/php55alpine
-    restart: unless-stopped
-    volumes:
-      - ./code/:/app
-      - ./src/info.php:/app/_dockerinfo.php
-    working_dir: /app
-    entrypoint: "php -S 0.0.0.0:80"
-    ports:
-      - 10550:80
-    environment:
-      - PHP_FPM_USER=www-data
-      - PHP_FPM_GROUP=www-data
-      - PHP_FPM_LISTEN_MODE=0666
+  # php55:
+  #   build: ./Dockerfiles/php55alpine
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./code/:/app
+  #     - ./src/info.php:/app/_dockerinfo.php
+  #   working_dir: /app
+  #   entrypoint: "php -S 0.0.0.0:80"
+  #   ports:
+  #     - 10550:80
+  #   environment:
+  #     - PHP_FPM_USER=www-data
+  #     - PHP_FPM_GROUP=www-data
+  #     - PHP_FPM_LISTEN_MODE=0666
 
   php56:
     build: ./Dockerfiles/php56alpine
